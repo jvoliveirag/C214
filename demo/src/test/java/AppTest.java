@@ -14,7 +14,7 @@ public class AppTest {
         Professor renzo = app.buscaProf(10); //passando o ID que o MOCK trata
                                                 //se passar ID != 10 vai falhar (diferente)
 
-        assertEquals("Skeleton", renzo.getNome());
+        assertEquals("Renzo", renzo.getNome());
         assertEquals(17, renzo.getHorarioDeAtendimento());
         assertEquals("integral", renzo.getPeriodo());
     }
