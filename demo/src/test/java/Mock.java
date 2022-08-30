@@ -9,6 +9,9 @@ public class Mock implements Service{ //"IMITA" as funcionalidades do real
         if (id == 20){
             return ProfessorConst.CHRIS;
         }
+        if (id == 0){
+            return ProfessorConst.ERRO;
+        }
         return null;
     }
 }
