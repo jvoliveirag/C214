@@ -40,15 +40,17 @@ public class AppTest {
 
     
     @Test
-    public void testeBuscaNull(){
+    public void testeBuscaFalhaNome(){
 
         Service service = new Mock();
         App app = new App(service); //Instanciando Classe e passando o parametro que
                                     //INJETA as dependencias (MOCK) que sao requeridas
                                     //pelo CONSTRUTOR da Classe
 
-        Professor erro = app.buscaProf(0);
+        Professor falha = app.buscaProf(30);
 
-        assertEquals("erro", erro.getNome());
+        assertEquals("Erro", falha.getNome());
+        assertEquals(19, falha.getHorarioDeAtendimento());
+        assertEquals("noturno", falha.getPeriodo());
     }
 }

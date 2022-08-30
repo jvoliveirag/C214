@@ -16,5 +16,7 @@ public class ProfessorConst {
             "\"periodo\": \"noturno\"}";            
 
     public static String ERRO = 
-        "{ \"MensagemErro\": \"erro\", \n }";  
+        "{ \"nomeDoProfessor\": \"Erro\", \n " +
+            "\"horarioDeAtendimento\": 19, \n " +
+            "\"periodo\": \"noturno\"}"; 
 }

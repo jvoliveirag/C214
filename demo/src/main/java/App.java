@@ -13,7 +13,7 @@ public class App {
     public Professor buscaProf(int id){
 
         String profJson = Service.busca(id); //Busca a partir do Servico atraves do id recebido
-                                                        //Tanto pelo real quanto pelo MOCK
+                                             //Tanto pelo real quanto pelo MOCK
 
         //CONVERTENDO A STRING INIMIGOJSON PARA UM JSONOBJECT
         JsonObject jsonObject = JsonParser.parseString(profJson).getAsJsonObject();
